@@ -1,27 +1,44 @@
 # ControlClientes
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.5.
+Este proyecto es una aplicación de gestión de clientes construida con Angular. Permite a los usuarios gestionar una lista de clientes, incluyendo la adición, edición y eliminación de información de clientes. La aplicación se integra con Firebase para la autenticación y el almacenamiento de datos.
 
-## Development server
+## Características
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Gestión de Clientes**: Añadir, editar y eliminar clientes.
+- **Autenticación**: Funcionalidad de inicio y cierre de sesión segura utilizando Firebase Authentication.
+- **Datos en Tiempo Real**: Actualizaciones en tiempo real de los datos de los clientes utilizando Firebase Firestore.
+- **Diseño Responsivo**: Interfaz amigable que funciona en varios dispositivos.
 
-## Code scaffolding
+## Estructura del Proyecto
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+El proyecto está estructurado de la siguiente manera:
 
-## Build
+- **app.component.ts**: Este es el componente principal de la aplicación. Define el selector `app-root`, que es el punto de entrada de la aplicación. Importa otros componentes como `RouterOutlet`, `CabeceroComponent` y `PiePaginaComponent`. El archivo de plantilla asociado (`app.component.html`) y el archivo de estilos (`app.component.css`) definen la estructura y el estilo de la aplicación.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- **CabeceroComponent**: Este componente representa el encabezado de la aplicación. Puede incluir elementos como el nombre de la aplicación, enlaces de navegación, etc.
 
-## Running unit tests
+- **PiePaginaComponent**: Este componente representa el pie de página de la aplicación. Puede incluir información de contacto, enlaces a políticas de privacidad, etc.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Servidor de Desarrollo
 
-## Running end-to-end tests
+Ejecuta `ng serve` para un servidor de desarrollo. Navega a `http://localhost:4200/`. La aplicación se recargará automáticamente si cambias alguno de los archivos fuente.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Generación de Código
 
-## Further help
+Ejecuta `ng generate component component-name` para generar un nuevo componente. También puedes usar `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Construcción
+
+Ejecuta `ng build` para construir el proyecto. Los artefactos de construcción se almacenarán en el directorio `dist/`.
+
+## Ejecución de Pruebas Unitarias
+
+Ejecuta `ng test` para ejecutar las pruebas unitarias a través de [Karma](https://karma-runner.github.io).
+
+## Ejecución de Pruebas de Extremo a Extremo
+
+Ejecuta `ng e2e` para ejecutar las pruebas de extremo a extremo a través de una plataforma de tu elección. Para usar este comando, primero necesitas añadir un paquete que implemente capacidades de pruebas de extremo a extremo.
+
+## Ayuda Adicional
+
+Para obtener más ayuda sobre Angular CLI usa `ng help` o consulta la [página de referencia y comandos de Angular CLI](https://angular.dev/tools/cli).
